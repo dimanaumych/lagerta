@@ -1,0 +1,686 @@
+/* POPUP */
+
+/* TEST */
+.popup-wrapper{
+    width: 50%;
+    background: #C4A676;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+.btn-1, .btn-2, .btn-3{
+    width: 50px;
+    height: 30px;
+    background: #7AD8A6;
+    cursor: pointer;
+}
+
+/* TEST */
+
+.popup-result{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    overflow: auto;
+}
+/* MEMBERSHIP*/
+.popup-membership{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    overflow: auto;
+}
+
+.popup-membership .popup-content{
+    width: 815px;
+    height: 530px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /*padding: 1.5rem 3rem;*/
+    background-image: url("../images/popup/white_bg.png");
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+
+.popup-title{
+    font-weight: bold;
+    color: black;
+    font-size: 2rem;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+.popup-title-underline{
+    width: 70px;
+    height: 1px;
+    background-color: #C4A676;
+    margin-bottom: 20px;
+}
+.popup-text{
+    color: #EC7505;
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.form-wrapper{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+.left-side{
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+.left-side p{
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 50px;
+    text-align: left;
+    text-transform: uppercase;
+}
+.right-side{
+    width: 60%;
+    background: darkslategrey;
+    border: 1px solid transparent;
+    border-radius: 150px 0px 0px 0px;
+    display: flex;
+    background-image: url("../images/popup/green_bg.png");
+    flex-direction: column;
+    justify-content: center;
+    color: #A7ACA4;
+    font-size: "Montserrat";
+}
+.next-btn{
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.first-step-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.first-step-wrapper .form-buttons{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+.second-step-wrapper .form-buttons{
+    width: 75%;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    justify-content: space-between;
+    font-size: 1.1rem;
+}
+.second-step-wrapper #user-member{
+    width: 67%;
+    margin: 0px auto;
+    height: 75px;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    border: none;
+    color: white;
+    resize: none;
+    background: #586750;
+}
+.second-step-wrapper #user-contribution{
+    width: 67%;
+    margin: 0px auto;
+    height: 170px;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    border: none;
+    background: #586750;
+    color: white;
+    resize: none;
+}
+.back-btn{
+    cursor: pointer;
+}
+.send-btn{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #C0A291;
+    border: 1px solid #C0A291;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.second-step-wrapper{
+    flex-direction: column;
+}
+.popup-membership form input{
+    margin: 0px auto;
+    width: 70%;
+    height: 20px;
+    margin-bottom: 12px;
+    padding: 7px;
+    border: none;
+    border-bottom: 1px solid #A7ACA4;
+    background-color: transparent;
+    color: white;
+}
+.popup-membership form input::placeholder {
+    color: #A7ACA4;
+    font-size: .9rem;
+    vertical-align: top;
+}
+.first-step-wrapper .form-buttons{
+    width: 73%;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+/* MEMBERSHIP*/
+
+/* PARTNERSHIP */
+.popup-partnership form input::placeholder {
+    color: #A7ACA4;
+    font-size: .9rem;
+    vertical-align: top;
+}
+
+.popup-membership form textarea::placeholder {
+    color: #A7ACA4;
+    font-size: .9rem;
+    vertical-align: top;
+}
+
+/* PARTNERSHIP */
+.popup-partnership form textarea::placeholder {
+    color: #A7ACA4;
+    font-size: .9rem;
+    vertical-align: top;
+}
+
+.popup-membership form{
+    text-align: center;
+}
+.popup-agreement-text{
+    font-size: .9rem;
+}
+
+.popup-form-button{
+    cursor: pointer;
+    width: 200px;
+    height: 55px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: black;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    font-family: Montserrat;
+}
+
+#user-details{
+    height: 100px;
+}
+.popup-close{
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    cursor: pointer;
+}
+.popup-close img{
+    width: 25px;
+    height: auto;
+}
+
+/* PARTNERSHIP */
+.popup-partnership{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    overflow: auto;
+}
+
+.popup-partnership .popup-content{
+    width: 815px;
+    height: 530px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /*padding: 1.5rem 3rem;*/
+    background-image: url("../images/popup/white_bg.png");
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+
+.popup-partnership form input{
+    margin: 0px auto;
+    width: 70%;
+    height: 20px;
+    margin-bottom: 12px;
+    padding: 10px 15px;
+    color: white;
+    border: none;
+    background: #586750;
+    margin-top: 20px;
+}
+
+#user-additional-info{
+    width: 70%;
+    margin: 0px auto;
+    height: 175px;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    border: none;
+    color: white;
+    resize: none;
+    background: #586750;
+}
+.popup-partnership .form-buttons{
+    display: flex;
+    width: 75%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+/* PARTNERSHIP */
+
+/* PARTICIPATION */
+.popup-participation{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    overflow: auto;
+}
+
+.popup-participation .popup-content{
+    width: 815px;
+    height: 530px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /*padding: 1.5rem 3rem;*/
+    background-image: url("../images/popup/white_bg.png");
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+
+.popup-participation form input{
+    margin: 0px auto;
+    width: 70%;
+    height: 20px;
+    margin-bottom: 12px;
+    padding: 7px;
+    color: white;
+    border: none;
+    border-bottom: 1px solid #A7ACA4;
+    background: transparent;
+    margin-top: 20px;
+}
+
+.popup-participation .form-buttons{
+    display: flex;
+    width: 73%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.popup-participation .send-btn-text{
+    color: white;
+}
+.project-text{
+    color: white;
+    text-transform: uppercase;
+    text-align: left;
+    width: 73%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+/* The container must be positioned relative: */
+.custom-select {
+    position: relative;
+    width: 73%;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+.custom-select select {
+    display: none; /*hide original SELECT element: */
+}
+
+.select-selected {
+    background-color: #586750;
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,.select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+}
+
+/* Style items (options): */
+.select-items {
+    position: absolute;
+    background-color: #586750;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+    display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+/* PARTICIPATION */
+
+/* POPUP RESULT */
+
+.popup-success{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    overflow: auto;
+}
+
+.popup-success .popup-content{
+    width: 815px;
+    height: 530px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /*padding: 1.5rem 3rem;*/
+    background-image: url("../images/popup/white_bg.png");
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+.popup-success .form-result-wrapper{
+    width: 100%;
+    height: 97%;
+    margin-top: 3%;
+    background: darkslategrey;
+    border: 1px solid transparent;
+    border-radius: 150px 0px 0px 0px;
+    display: flex;
+    background-image: url(../images/popup/green_bg.png);
+    flex-direction: column;
+    justify-content: center;
+    color: #A7ACA4;
+    font-size: "Montserrat";
+}
+.popup-success .popup-close {
+    position: absolute;
+    right: 30px;
+    top: 35px;
+    cursor: pointer;
+}
+.form-result p{
+    margin-top: 20px;
+    color: white;
+}
+
+/* POPUP RESULT */
+
+
+/* POPUP */
+@media (max-width: 1025px) {
+    /* MEMBERSHIP*/
+    .popup-membership .popup-content {
+        width: 700px;
+        height: 530px;
+        background-image: url("../images/popup/white_bg.png");
+    }
+    /* MEMBERSHIP*/
+
+    /* PARTNERSHIP */
+    .popup-partnership .popup-content {
+        width: 700px;
+        height: 530px;
+        background-image: url("../images/popup/white_bg.png");
+    }
+    /* PARTNERSHIP */
+
+    /* PARTICIPATION */
+    .popup-participation .popup-content {
+        width: 700px;
+        height: 530px;
+        background-image: url("../images/popup/white_bg.png");
+    }
+    /* PARTICIPATION */
+
+    /* POPUP RESULT */
+    .popup-success .popup-content {
+        width: 700px;
+        height: 530px;
+        background-image: url("../images/popup/white_bg.png");
+    }
+    /* POPUP RESULT */
+
+}
+
+@media (max-width: 769px){
+    /* MEMBERSHIP*/
+    .popup-membership .popup-content {
+        width: 550px;
+        height: 530px;
+    }
+    /* MEMBERSHIP*/
+
+    /* PARTNERSHIP */
+    .popup-partnership .popup-content {
+        width: 550px;
+        height: 530px;
+    }
+    .left-side p{
+        margin-left: 25px;
+    }
+    /* PARTNERSHIP */
+
+    /* PARTICIPATION */
+    .popup-participation .popup-content {
+        width: 550px;
+        height: 530px;
+    }
+    .left-side p{
+        margin-left: 25px;
+    }
+    /* PARTICIPATION */
+
+    /* POPUP RESULT */
+    .popup-success .popup-content {
+        width: 550px;
+        height: 530px;
+    }
+    /* POPUP RESULT */
+
+}
+
+@media (max-width: 600px){
+    /* MEMBERSHIP*/
+    .popup-membership .popup-content {
+        width: 100%;
+        height: 530px;
+    }
+    /* MEMBERSHIP*/
+    /* PARTNERSHIP */
+    .popup-partnership .popup-content {
+        width: 100%;
+        height: 530px;
+    }
+    /* PARTNERSHIP */
+
+    /* PARTICIPATION */
+    .popup-participation .popup-content {
+        width: 100%;
+        height: 530px;
+    }
+    /* PARTICIPATION */
+
+    /* POPUP RESULT */
+    .popup-success .popup-content {
+        width: 100%;
+        height: 530px;
+    }
+    /* POPUP RESULT */
+}
+@media (max-width: 500px){
+    /* MEMBERSHIP*/
+    .popup-membership .popup-content {
+        width: 100%;
+        height: 100vh;
+    }
+    .form-wrapper{
+        flex-direction: column;
+    }
+    .left-side{
+        width: 100%;
+        height: 20%;
+    }
+    .right-side{
+        width: 100%;
+        height: 75%;
+    }
+    .first-step-wrapper{
+        /*min-height: 500px;*/
+    }
+    .right-side {
+        border: 1px solid transparent;
+        border-radius: 100px 0px 0px 0px;
+    }
+    #user-name-popup{
+        margin-top: 25px;
+    }
+    /* MEMBERSHIP*/
+
+    /* PARTNERSHIP */
+    .popup-partnership .popup-content {
+        width: 100%;
+        height: 100vh;
+    }
+    .popup-partnership .form-buttons {
+        width: 75%;
+    }
+    /* PARTNERSHIP */
+
+    /* PARTICIPATION */
+    .popup-participation .popup-content {
+        width: 100%;
+        height: 100vh;
+    }
+    .popup-participation .form-buttons {
+        width: 75%;
+    }
+    /* PARTICIPATION */
+
+    /* POPUP RESULT */
+    .popup-success .popup-content {
+        width: 100%;
+        height: 100vh;
+    }
+    .popup-success .form-result-wrapper {
+        width: 100%;
+        height: 98%;
+    }
+    /* POPUP RESULT */
+}
+@media (max-height: 550px) {
+    /* MEMBERSHIP*/
+    .popup-membership .popup-content{
+        position: relative;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -30%);
+        height: 80vh;
+        min-height: 530px;
+        /*overflow: auto;*/
+        /*margin-top: 50px;*/
+    }
+    /* MEMBERSHIP*/
+}

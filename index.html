@@ -9,12 +9,14 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/header.css">
 	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/popup.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Cormorant&family=Montserrat&display=swap" rel="stylesheet">
 	<link rel="shortcut icon" type="image/png" href="images/header/favicon.png"/>
+	<script src="scripts/jquery/jquery-3.3.1.js"></script>
 </head>
 <body>
 
@@ -35,7 +37,149 @@
 	</div>
 </div>
 
+<div class="popup-wrapper">
+	<div class="btn-1">1</div>
+	<div class="btn-2">2</div>
+	<div class="btn-3">3</div>
+</div>
+	<!-- Popup CONTACT FORM MEMBERSHIP -->
+	<div class="popup-membership">
+		<div class="popup-content">
+			<a class="popup-close">
+				<img src="images/popup/close.png">
+			</a>
+			<div class="form-wrapper">
+				<div class="left-side"><p>Please <b>fill</b> <br><b>in the form</b></p></div>
+				<div class="right-side">
+					<form class="popup-contact-form" id = "form-popup-membership"  method="POST">
+						<div class="first-step-wrapper">
+							<input placeholder="Full name" type="text" id="user-name-popup" maxlength="50">
+							<input placeholder="+380*" type="tel" id="user-phone-popup" value="">
+							<input placeholder="E-mail" type="email" id="user-email-popup3" value="">
+							<input placeholder="Social media" type="text" id="user-social-popup4" value="">
+							<input placeholder="Date of birth*" type="date" id="user-birth-popup5" value="">
+							<input placeholder="Marital status*" type="text" id="user-marital-popup6" value="">
+							<input placeholder="Occupation" type="text" id="user-occupation-popup7" value="">
+							<div class="form-buttons">
+								<p>1/2</p>
+								<div class="next-btn">Next</div>
+							</div>
+						</div>
+						<div class="second-step-wrapper" style="display: none">
+							<textarea placeholder="Why do you want to become a member" type="text" id="user-member" maxlength="1000"></textarea>
+							<textarea placeholder="What kind of contribution you consider to make" type="tel" id="user-contribution" maxlength="1000" value=""></textarea>
+							<div class="form-buttons">
+								<p class="back-btn">Back</p>
+								<button class="send-btn"><img src="images/popup/send_arrow.png"></button>
+							</div>
+						</div>
+						<p class="popup-agreement-text" style="display: none">Нажимая кнопку "Отправить" Вы соглашаетесь на обработку персональных данных</p>
+						<p class="feedback-form-email" style="display: none;"><?php the_field('feedback_email');?></p>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Popup CONTACT FORM MEMBERSHIP -->
 
+	<!-- Popup CONTACT FORM PARTNERSHIP -->
+	<div class="popup-partnership">
+		<div class="popup-content">
+			<a class="popup-close">
+				<img src="images/popup/close.png">
+			</a>
+			<div class="form-wrapper">
+				<div class="left-side"><p>Please <b>Send</b> <br><b>your offer</b></p></div>
+				<div class="right-side">
+					<form class="popup-contact-form" id = "form-popup-partnership"  method="POST">
+							<input id="partnership-offers" placeholder="Partnership offers" disabled>
+						<textarea placeholder="Type your text here" type="text" id="user-additional-info" required></textarea>
+							<div class="form-buttons">
+								<p class="back-btn">Send email</p>
+								<button class="send-btn"><img src="images/popup/send_arrow.png"></button>
+							</div>
+						<p class="feedback-form-email" style="display: none;"><?php the_field('feedback_email');?></p>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Popup CONTACT FORM PARTNERSHIP -->
+
+	<!-- Popup CONTACT FORM PARTICIPATION -->
+	<div class="popup-participation">
+		<div class="popup-content">
+			<a class="popup-close">
+				<img src="images/popup/close.png">
+			</a>
+			<div class="form-wrapper">
+				<div class="left-side"><p>Please <b>Send</b> <br><b>your offer</b></p></div>
+				<div class="right-side">
+					<form class="popup-contact-form" id = "form-popup-popup-participation"  method="POST">
+						<input id="popup-participation-name" placeholder="Partnership offers">
+						<input id="popup-participation-phone" placeholder="Partnership offers">
+						<input id="popup-participation-E-mail" placeholder="Partnership offers">
+						<p class="project-text">Choose the project <br>of your interest</p>
+						<div class="custom-select">
+							<select>
+								<option value="0">Select Project:</option>
+								<option value="1">Освітній проєкт "Школа Еліт"</option>
+								<option value="2">Проєкт "Інститут зцілення травми</option>
+								<option value="3">Видавничий проєкт</option>
+								<option value="0">Select Project:</option>
+								<option value="1">Освітній проєкт "Школа Еліт"</option>
+								<option value="2">Проєкт "Інститут зцілення травми</option>
+								<option value="3">Видавничий проєкт</option>
+							</select>
+						</div>
+						<div class="form-buttons">
+							<p class="send-btn-text">Join Us</p>
+							<button class="send-btn"><img src="images/popup/send_arrow.png"></button>
+						</div>
+						<p class="feedback-form-email" style="display: none;"><?php the_field('feedback_email');?></p>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Popup CONTACT FORM PARTICIPATION -->
+
+	<!-- Popup RESULT -->
+	<div class="popup-result">
+		<div class="popup-content">
+			<a class="popup-close">
+				<img src="/wp-content/themes/IO-WP/images/front-page/cancel.png">
+			</a>
+			<div class="block-name">
+				<p class="popup-title">Спасибо за обращение!</p>
+			</div>
+			<p class="popup-text" style="color: black; margin-top: 30px; margin-bottom: 40px;">Наш специалист свяжется с вами</p>
+
+			<div class="call-me-button">
+				<a href="https://www.traff-academy.com"><button class="popup-form-button">На главную</button></a>
+			</div>
+
+		</div>
+	</div>
+
+
+<!-- POPUP RESULT -->
+<!-- Popup CONTACT FORM PARTNERSHIP -->
+<div class="popup-success">
+	<div class="popup-content">
+		<a class="popup-close">
+			<img src="images/popup/close.png">
+		</a>
+		<div class="form-result-wrapper">
+			<div class="form-result">
+				<img src="images/popup/check.png">
+				<p>Your application <br>has been successfully sent</p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Popup CONTACT FORM PARTNERSHIP -->
+<!-- POPUP RESULT -->
 
 <footer>
 
@@ -44,5 +188,7 @@
 <script src="scripts/slow_anchor.js"></script>
 <script src="scripts/header.js"></script>
 <script src="scripts/header_banner_slider.js"></script>
+<script src="scripts/popup.js"></script>
+<script src="scripts/select.js"></script>
 </body>
 </html>
