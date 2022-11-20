@@ -813,4 +813,10 @@ a {
     .co-founders-cards-info_title {
         font-size: 13px;
     }
+
+    .cooperation-partnership-title {
+        font-size: 30px;
+        margin-bottom: 0px;
+        padding: 0px 20px;
+    }
 }
