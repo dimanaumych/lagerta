@@ -13,16 +13,28 @@ a {
 
 .join-us-wrapper{
     width: 100%;
-    background: rgb(67,78,60);
+    background: url("../images/front-page/bg 1 screnn green.png");
     display: flex;
 
 }
 
+.join-us-photo{
+    max-width: 60%;
+}
+
 .join-us-photo__photo{
     height: 100%;
+    width: 100%;
+}
+
+.join-us-info-wrapper{
+    max-width: 40%;
 }
 
 .join-us-info{
+    max-width: 300px;
+    height: 100%;
+    margin-left: 60px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -30,45 +42,548 @@ a {
 
 .join-us-info_text{
     margin-top: 85px;
-    margin-left: 60px;
 }
 
 .join-us-info__text{
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 200;
     font-size: 16px;
-    line-height: 136%;
+    color: #F4F4F4;
+}
+
+.join-us-info_button{
+    border-bottom: 1px solid #AEB1AC;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.join-us-info_button__text{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 16px;
     color: #F4F4F4;
 }
 
 .button-arrow{
     width: 44px;
     height: 44px;
+    background: #F8EFEA;
+    border-radius: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
 }
 
-.join-us-info_button{
-    border-bottom: 1px solid #AEB1AC;
-}
 
 /*Second Block-End*/
 
-@media (max-width: 1440px) {
+
+/*Split-Block-Start*/
+
+.info-wrapper{
+    width: 100%;
+    background: url("../images/front-page/bg 2 screen pink.png");
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.info{
+    max-width: 1280px;
+    margin: 0px auto;
+}
+
+.info-container{
+    max-width: 650px;
+    margin: 0px auto;
+}
+
+.info_split{
+    display: flex;
+    justify-content: center;
+}
+
+.info_split__text{
+    max-width: 300px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 136%;
+    color: #262B24;
+}
+
+.info_text__text{
+    font-family: 'Cormorant';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 125%;
+    text-transform: uppercase;
+    color: #262B24;
+}
+
+.info_split:first-child{
+    margin-right: 50px;
+}
+
+.info-text-wrapper{
+    max-width: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px auto;
+    margin-top: 35px;
 
 }
 
+.info_text__text-span{
+    font-style: italic;
+}
+
+
+
+/*Split-Block-End*/
+
+
+/*About-us-Start*/
+
+.about-us-wrapper{
+    background-image: url("../images/front-page/bg 3 screen green.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    margin: 0px auto;
+    padding-bottom: 200px;
+}
+
+.about-us-container{
+    max-width: 1280px;
+    margin: 0px auto;
+    padding-top: 180px;
+}
+
+.about-us-title{
+    width: 100%;
+    font-family: 'Cormorant';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 125%;
+    text-transform: uppercase;
+    color: #F4F4F4;
+    margin: 0px auto;
+    margin-bottom: 50px;
+}
+
+.about-us-title-span{
+    color: #C0A291;
+}
+
+.about-us-info{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 60px;
+}
+
+.about-us-info_button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    width: 300px;
+}
+
+.about-us-info_button__text{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 16px;
+    color: #F4F4F4;
+}
+
+.about-us-info-button-arrow{
+    width: 44px;
+    height: 44px;
+    background: #C0A291;
+    border-radius: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.about-us-info_button__wrapper{
+    width: 50%;
+    display: flex;
+    align-items: end
+}
+
+.about-us-info_text{
+    width: 50%;
+}
+
+.about-us-info_text ul li{
+    font-family: 'Cormorant';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 125%;
+    text-transform: uppercase;
+    color: #F4F4F4;
+}
+
+
+.about-us-info_title__title{
+    font-family: 'Cormorant';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 125%;
+    text-transform: uppercase;
+    color: #F4F4F4;
+    position: relative;
+}
+
+.about-us-info_title__title::after{
+    content: url('../images/front-page/arrow-position.png');
+    display: block;
+    width: 130px;
+    height: 260px;
+    position: absolute;
+    left: 20px;
+}
+
+.about-us-info_title{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.co-founders-wrapper{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 100px;
+    padding-bottom: 50px;
+}
+
+.co-founders-wrapper_title{
+    font-family: 'Cormorant';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 125%;
+    text-transform: uppercase;
+    color: #F4F4F4;
+
+}
+
+.co-founders-cards{
+    position: relative;
+}
+
+.co-founders-cards-photo{
+
+}
+
+.co-founders-cards-info{
+    position: absolute;
+    bottom: 40px;
+    max-width: 520px;
+    background: #262B24;
+    border-radius: 0px 85px 85px 0px;
+    padding: 18px 18px;
+    min-height: 84px;
+}
+
+.co-founders-cards-info_title{
+    font-family: 'Cormorant';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 136%;
+    color: #F4F4F4;
+}
+
+.co-founders-cards-info_text{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 148.5%;
+    color: #C0A291;
+}
+.co-founders-cards-info_text_span{
+    color: #F4F4F4;
+}
+
+.co-founders-cards-container{
+    display: flex;
+    justify-content: center;
+}
+
+.co-founders-cards:first-child{
+    margin-right: 30px;
+}
+
+.about-us-info__photo{
+    display: none;
+    margin: 0px auto;
+}
+
+/*About-us-End*/
+
+
+@media (max-width: 1440px) {
+
+    .about-us-info_title {
+        margin-right: 50px;
+    }
+
+    .co-founders-cards-photo {
+        width: 420px;
+    }
+
+    .co-founders-cards-info {
+        max-width: 290px;
+    }
+
+    .co-founders-cards-info_text {
+        font-size: 13px;
+    }
+
+    .co-founders-cards-info_title {
+        font-size: 15px;
+    }
+
+    .co-founders-wrapper {
+        padding-left: 30px;
+    }
+
+    .about-us-title {
+        width: 80%;
+        padding-left: 30px;
+        font-size: 50px;
+    }
+
+    .about-us-info {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .about-us-info__photo:nth-child(1){
+        display: block;
+    }
+
+}
+
+@media (max-width: 1999px) {
+    .about-us-info__photo:nth-child(1){
+        display: none;
+    }
+
+    .about-us-info__photo:nth-child(2){
+        display: block;
+    }
+}
+
 @media (max-width: 1025px) {
+    .join-us-wrapper{
+        height: 350px;
+    }
+
+    .join-us-photo {
+        max-width: 50%;
+    }
+
+    .join-us-info_text {
+        margin-top: 40px;
+    }
+
+    .join-us-info_button {
+        margin-bottom: 45px;
+    }
+
+    .co-founders-cards-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .co-founders-cards:first-child {
+        margin-right: 0px;
+        margin-bottom: 40px;
+    }
+
+    .co-founders-cards-photo {
+        width: 550px;
+    }
+
+    .co-founders-cards-info {
+        max-width: 355px;
+    }
+
+    .about-us-info_title {
+        padding-left: 30px;
+        justify-content: flex-start;
+        margin-bottom: 50px;
+    }
+    .about-us-info_title__title::after{
+        display: none;
+    }
+
+    .about-us-info {
+        flex-direction: column-reverse;
+    }
+
+    .about-us-info_text {
+        margin-bottom: 50px;
+    }
+    .about-us-info_text {
+        width: 100%;
+    }
+
+    .about-us-info__photo:nth-child(2){
+        display: none;
+    }
+
+    .about-us-info__photo:nth-child(3){
+          display: block;
+      }
 
 }
 
 @media (max-width: 768px) {
+    .join-us-wrapper {
+        height: auto;
+        display: flex;
+        flex-direction: column-reverse;
+    }
 
+    .join-us-info-wrapper {
+        max-width: 100%;
+    }
+
+    .join-us-photo {
+        max-width: 100%;
+        max-height: 340px;
+    }
+
+    .join-us-info {
+        margin: 0px auto;
+        max-width: 80%;
+        height: 200px;
+        padding: 30px 0px;
+        justify-content: space-around;
+    }
+
+    .join-us-info_button {
+        margin-bottom: 10px;
+        margin-top: 0px;
+        border-bottom: 0px;
+    }
+
+    .join-us-info_text {
+        margin-top: 0px;
+    }
+
+    .info-wrapper {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .info-container {
+        padding: 0px 20px;
+    }
+
+    .info_split {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .info_split__text:first-child{
+        margin-bottom: 30px;
+    }
+
+    .info_split__text{
+        max-width: 100%;
+    }
+
+    .info_split:first-child {
+        margin-right: 0px;
+        max-width: 100%;
+    }
+
+    .about-us-info__photo:nth-child(3){
+        display: none;
+    }
+
+    .about-us-info__photo:nth-child(4){
+        display: block;
+    }
+
+}
+
+@media (max-width: 620px) {
+    .co-founders-cards-photo {
+        width: 400px;
+    }
+    .co-founders-cards-info {
+        max-width: 250px;
+    }
+
+    .about-us-wrapper {
+        padding-bottom: 70px;
+    }
 }
 
 @media (max-width: 500px) {
+    .button-arrow {
+        background: #C0A291;
+    }
 
+    .join-us-photo {
+        max-width: 100%;
+        height: 195px;
+    }
+
+    .about-us-title {
+        padding-left: 0px;
+        font-size: 30px;
+    }
 }
 
-@media (max-width: 450px) {
 
+@media (max-width: 470px) {
+    .about-us-info__photo:nth-child(4){
+        display: none;
+    }
+
+    .about-us-info__photo:nth-child(5){
+        display: block;
+    }
+}
+
+
+@media (max-width: 424px) {
+    .co-founders-cards-photo {
+        width: 290px;
+    }
+
+    .co-founders-cards-info {
+        max-width: 190px;
+    }
+
+    .co-founders-cards-info_text {
+        font-size: 10px;
+    }
+
+    .co-founders-cards-info_title {
+        font-size: 13px;
+    }
 }
